@@ -19,7 +19,7 @@ temp = False
 # spatial distance (in meters)
 # Take a smaller value of the spatial impact factor for heterogeneous regions 
 # (e.g. A = 150 m)
-spatImp = 150 
+spatImp = 120 
 
 # increasing the number of classes limits the number of similar pixels
 numberClass = 4 
@@ -40,7 +40,10 @@ tempUncertainty = np.sqrt(2*uncertaintyCoarseRes**2)
 # Set the size of the slices in which to divide the image
 # This number should be multiple of the image height and not bigger than it
 # Use bigger size for small images
-sizeSlices = 150
+sizeSlices = 120
+
+# Resize parameters - height and width
+resize_params = (120,120)
 
 
 
